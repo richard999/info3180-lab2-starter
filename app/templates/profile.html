@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile-card">
+  <div class="profile-header">
+      <img class="profile-pic" src="{{ url_for('static', filename='bill.jfif') }}" alt="profile pic">
+      <div class="person-info">
+          <h1>Mary Jane</h1>
+          <p>@mjane</p>
+          <p>Kingston, Jamaica</p>
+          <p>{{date}}</p>
+      </div>
+  </div>
+  <div class="profile-info">
+      <div class="profile-bio">
+          <p>Many jane spends, Benjamin Franklyn. How you mean mary jane have the bank link, so me bankbook dem haffi attractive. Steam fish inna me plate annuh mackerel.</p>        
+      </div>
+      <div class="profile-stats">
+          <div class="profile-stat">
+              <p class="stat">5</p>
+              <p>Posts</p>
+          </div>
+          <div class="profile-stat">
+              <p class="stat">35</p>
+              <p>Following</p>
+          </div>
+          <div class="profile-stat">
+              <p class="stat">456K</p>
+              <p>Followers</p>
+          </div>
+          
+      </div>
+      <p>
+          <button type="button" class="btn btn-follow">Follow</button>
+      </p>
+  </div>
+</div>
+{% endblock %}
